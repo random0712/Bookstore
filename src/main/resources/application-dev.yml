@@ -13,9 +13,6 @@ management:
     web:
       exposure:
         include: "*"
-  info:
-    git:
-      mode: simple
 
 info:
   app:
