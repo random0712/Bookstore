@@ -1,0 +1,25 @@
+springdoc:
+  packagesToScan: com.patrickamaro.bookstoremanager
+  paths-to-match: /**
+
+logging:
+  level:
+    br:
+      com:
+        patrickamaro: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  info:
+    git:
+      mode: simple
+
+info:
+  app:
+    name: @project.name@
+    groupId: @project.groupId@
+    artifactId: @project.artifactId@
+    version: @project.version@
