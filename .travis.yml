@@ -2,4 +2,7 @@ dist: xenial
 language: java
 sudo: false
 jdk: openjdk17
-install: true
+before_install:
+  - chmod +x mvnw
+install:
+  - ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
